@@ -1,0 +1,78 @@
+Open any termina or Git bash
+type git --version to check whether it is intalled or networks
+
+First we need to set the conf so that other people can see who made this changes.
+by providing name and email
+using following command:
+git config --global user.name "Sanket Dighe"
+git config --global user.email "sanket.dighe7@gmail.com"
+
+to check email and name:
+git config --global user.email
+
+one more method to change the config update email and name:
+git config --global --edit
+
+edit the details in the file
+
+to save the file:
+ESC -> : -> W -> Q
+
+To create new repository:
+git init
+
+to list files in directory:
+ls
+
+ls -a
+
+To check changes inside the Repository:
+git status
+
+files in red shows untrack files
+
+to track the files:
+git add Git\ Tutorials.text
+
+git status
+
+Staging:
+Staging area is where we hold our changes before performing commit
+
+first we add files to staging area then from staging we can commit
+
+To commit files:
+git commit -m "comment"
+
+To track commit:
+git log
+
+check git versionining by adding new file (hello.py)
+
+again
+git status
+
+you will see untracked files and modified files
+to add all the files from the current folder:
+git add .
+
+to commit:
+git commit -m "added new file: hello.py, Git Tutorials.txt updated"
+
+to check log:
+git log
+
+To go back to the previous version:
+
+git checkout #code
+
+git branch
+
+To create new branch:
+git branch dev
+
+to use git branch and checkout in one command:
+git checkout -b <branch name>
+
+git checkout -b sanket/feature
+
